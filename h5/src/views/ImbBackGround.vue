@@ -23,6 +23,7 @@ export default class ImbBackGround extends Vue {
 
   public onload() {
     this.img.onload();
+    this.$emit('onload');
   }
 
   public destroyed() {
